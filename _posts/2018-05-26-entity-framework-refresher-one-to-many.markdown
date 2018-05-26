@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Entity Framework 6 Refresher: One To Many"
-date:   2018-05-25 20:30:00 -0500
+date:   2018-05-26 20:30:00 -0500
 categories: entity-framework
 ---
 
