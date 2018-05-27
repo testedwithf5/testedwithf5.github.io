@@ -157,7 +157,7 @@ public class PersonMap : EntityTypeConfiguration<Person>
 }
 {% endhighlight %}
 
-Somwhat interestingly, if we choose to think of our data from the perspective of hobbies instead of people, we can add the mapping to the `Hobby` configuration and still achieve the same result.
+Somewhat interestingly, if we choose to think of our data from the perspective of hobbies instead of people, we can add the mapping to the `Hobby` configuration and still achieve the same result by starting by using the `HasRequired.WithMany` instead of `HasMany.WithRequired`.
 
 {% highlight csharp %}
 public class HobbyMap : EntityTypeConfiguration<Hobby>
