@@ -80,7 +80,7 @@ public PersonMap()
 }
 {% endhighlight %}
 
-An additional option in many-to-many scenarios to model the join table.  You may want to store data other than just foreign keys here, or it may just make more sense in your application to work with this table rather than the root elements.  Inserting a record here will take care of inserting the related `Person` or `Hobby` record, should they not exist.  In this case, we are using a composite primary key and <em>must</em> specify this in the mapping file. 
+An additional option in many-to-many scenarios is to model the join table.  You may want to store data other than just foreign keys here, or it may just make more sense in your application to work with this table rather than the root elements.  Inserting a record here will take care of inserting the related `Person` or `Hobby` record, should they not exist.  In this case, we are using a composite primary key and <em>must</em> specify this in the mapping file. 
 
 {% highlight csharp %}
 public class PersonHobby

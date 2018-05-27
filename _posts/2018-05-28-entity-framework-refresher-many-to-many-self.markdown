@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Entity Framework 6 Refresher: Many To Many Referencing Self"
-date:   2018-05-27 09:30:00 -0500
+date:   2018-05-28 09:30:00 -0500
 categories: entity-framework
 comments: true
 published: true
