@@ -1,7 +1,7 @@
 ---
 layout: single
 title:  "Entity Framework 6 Refresher: Changing a nullable field to non-nullable"
-date:   2018-05-30 09:30:00 -0500
+date:   2018-05-30 09:31:00 -0500
 categories: entity-framework
 comments: true
 tags: entity-framework
