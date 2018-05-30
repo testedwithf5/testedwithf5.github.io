@@ -3,6 +3,8 @@ layout: single
 title:  "Entity Framework 6 Refresher: Seed Data"
 date:   2018-05-22 20:30:00 -0500
 categories: entity-framework
+comments: true
+tags: entity-framework
 ---
 
 "Seed Data" is data that is inserted into the database when migrations are run.  Generally, this would be relatively static look-up data such as `States` or `OrderStatuses`. but it can be anything you want.

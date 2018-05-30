@@ -3,7 +3,10 @@ layout: single
 title:  "Entity Framework 6 Refresher: Mapping Files"
 date:   2018-05-22 20:30:00 -0500
 categories: entity-framework
+comments: true
+tags: entity-framework
 ---
+
 
 Entity Framework can determine a lot of things about your model on it's own, but at some point you need to provide some information about your classes that it has no way of knowing.  There are three ways to do this:  Attributes, via code in the DbContext itself and in separate mapping files.
 

@@ -4,6 +4,7 @@ title:  "Entity Framework 6 Refresher: One To One"
 date:   2018-05-29 09:30:00 -0500
 categories: entity-framework
 comments: true
+tags: entity-framework
 ---
 
 Often a one-to-one relationship is required.   Mapping these in EF is very similar to mapping any other relationships.  For this example each person can have one car, and each car must belong to one and only one person.

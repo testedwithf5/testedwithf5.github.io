@@ -4,7 +4,7 @@ title:  "Entity Framework 6 Refresher: Many To Many Referencing Self"
 date:   2018-05-28 09:30:00 -0500
 categories: entity-framework
 comments: true
-published: true
+tags: entity-framework
 ---
 
 Occasionally a many-to-many relationship needs to be established with an entity pointing to itself;  In the case of the small domain we are working with, we can examine this with the concept of a `Family` - `Person` referencing `Person`.   

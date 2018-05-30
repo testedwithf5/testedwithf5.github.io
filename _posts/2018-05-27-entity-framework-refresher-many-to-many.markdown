@@ -4,6 +4,7 @@ title:  "Entity Framework 6 Refresher: Many To Many"
 date:   2018-05-27 09:30:00 -0500
 categories: entity-framework
 comments: true
+tags: entity-framework
 ---
 
 To demonstrate a many to many relationship, we can look at a two-way relationship between `Person` and `Hobby`.  We start by adding a collection property to each class.

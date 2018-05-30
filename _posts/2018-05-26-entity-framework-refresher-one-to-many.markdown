@@ -3,6 +3,8 @@ layout: single
 title:  "Entity Framework 6 Refresher: One To Many"
 date:   2018-05-26 20:30:00 -0500
 categories: entity-framework
+comments: true
+tags: entity-framework
 ---
 
 To demonstrate a one-to-many relationship, we can associate `Person` with `Hobby`.   This means that each hobby will belong to one and only one person (our people are hipsters who quickly move on at the first whiff of someone else enjoying what they enjoy).

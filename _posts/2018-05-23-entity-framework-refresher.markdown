@@ -3,13 +3,20 @@ layout: single
 title:  "Entity Framework 6 Refresher: Initial Setup"
 date:   2018-05-22 20:30:00 -0500
 categories: entity-framework
+comments: true
+tags: entity-framework
 ---
 It has been a long time since I used Entity Framework on anything other than an brownfield project where most work consisted of adding or removing the occasional field.  This series of posts is intented as a refresher as I relearn some concepts.
 
-1.  Initial Setup (this post)
-2.  Seed data
-3.  Mapping files
-4.  One-to-many relationship mapping
+
+1. [Initial Setup]({{ site.baseurl }}{% post_url 2018-05-23-entity-framework-refresher %})
+2. [Seed Data]({{ site.baseurl }}{% post_url 2018-05-24-entity-framework-seed-data %})
+3. [Mapping Files]({{ site.baseurl }}{% post_url 2018-05-25-entity-framework-refresher-mapping-files %})
+4. [One-to-many mapping]({{ site.baseurl }}{% post_url 2018-05-26-entity-framework-refresher-one-to-many %})
+5. [Many-to-many mapping]({{ site.baseurl }}{% post_url 2018-05-27-entity-framework-refresher-many-to-many %})
+6. [Many-to-many self mapping]({{ site.baseurl }}{% post_url 2018-05-28-entity-framework-refresher-many-to-many-self %})
+7. [One-to-one mapping]({{ site.baseurl }}{% post_url 2018-05-29-entity-framework-refresher-one-to-one %})
+
 
 Initial setup.
 
