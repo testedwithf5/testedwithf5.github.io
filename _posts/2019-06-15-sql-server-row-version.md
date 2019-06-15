@@ -56,7 +56,7 @@ update ExampleTable2 set Other = NEWID() where PriKey = 2
 
 We can see that the `VerCol` was automatically updated to the next number in the sequence.
 
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/rowversion_2.PNG" alt="initial values">
+<img src="{{ site.url }}{{ site.baseurl }}/assets/images/rowversion_2.png" alt="initial values">
 
 The usefulness is immediateley obvious in two scenarios that come to mind.  The first would be a scenario where a user is editing a record that another user is also editing.  If User A saves the record, the `VerCol` will be updated.  When User B goes to save the record, we could check the value of this column against the record User B is working with and prevent the save operation with a warning that the data is out of date.
 
