@@ -40,7 +40,7 @@ We can see the first benefit immediately:  If  the constructor of `DependencyOne
 
 >Q:  OK, but it looks like all I did was bump my "new" statement up a level.  Now instead of `new Service()`, I need to create `new Service(new DependencyOne(), new DependencyTwo()`
 
-At some point you are going to have what's known as a "composition root" where you need to make the decisions of how new instances are created.  To help with this, we can use dependency injection frameworks such as Lamar, StructureMap or AutoFac.  These frameworks are known as "containers" and they are responsible for creating the "dependency graph" (there are a lot of terms associated with this concept, any they will start to make sense as you start working with it).
+At some point you are going to have what's known as a "composition root" where you need to make the decisions of how new instances are created.  To help with this, we can use dependency injection frameworks such as Lamar, StructureMap or AutoFac.  These frameworks are known as "containers" and they are responsible for creating the "dependency graph" (there are a lot of terms associated with this concept, any they will start to make sense as you get more comfortable with it).
 
 >Q:  Why do I want to do this?
 
@@ -74,14 +74,11 @@ Where we are now passing in Interfaces instead of implementations.  We have "inv
 The primary benefit is loose coupling.  It is much cleaner to depend on an `IWeatherService` that defines what a weather service should do than on a concrete implementation like  `SimpleWeatherService` or `WeatherChannelWeatherService`.  
 When we only care about the abstraction, we can easily swap in any implementation of `IWeatherService` without having to make any changes to the class consuming this.
 
-Additionally, there are some other benefits:
-
-1. Testable code.   Dependency Inversion allows you to break apart complex problems into small isolated units that are be tested individually.
+Additionally, there are some other benefits such as testable code.   Dependency Inversion allows you to break apart complex problems into small isolated units that can be tested individually.
 	
-2. Reduction in "new".  When using a container, service initialization taken care of for you.  If you had `SimpleWeatherService(Logger)` and you added `SimpleWeatherService(Logger, Location)` you would need to 
-update every usage.  When the container takes care of this for you, you don't need to worry about instantiation.
+You also end up with a substantial reduction in "new".  When using a container, object initialization is taken care of for you.  Without a container, If you had `SimpleWeatherService(Logger)` and you added `SimpleWeatherService(Logger, Location)` you would need to update every usage.  When the container takes care of this for you, you won't find yourself updating multiple files across your application.
 
->Q: It looks like there might be some benefits here.  When would I want to use this kind of approach vs sticking to what I've been doing?
+>Q: When would I want to use this kind of approach vs sticking to what I've been doing?
 
 Generally, you'd switch to this approach when you start feeling any type of discomfort from managing dependencies.  If you have a small application, there's hardly every a good case for adding additional complexity, but if that application grows and you want to take advantage of the benefits listed above it might be time to switch.
 
@@ -93,10 +90,9 @@ Good news: You don't need one
 
 Bad news:  You should probably use one.
 
-You can definitely do all of this manually, but given the sheer variety of things that an IoC container  can do and the number of things they simplify it's probably better to use something that's been tested and used in multiple differing production environments by other people.  For example - how should lifecycles be managed?  Do you want a single instances
-per HTTP request?  Or a new instance for every class that needs one?  Or do you just want a single instance to be created for the entire application?
+You can definitely do all of this manually, but given the sheer variety of things that an IoC container  can do and the number of things they simplify it's probably better to use something that's been tested and used in multiple differing production environments by other people.  For example - how should lifecycles be managed?  Do you want a single instances per HTTP request?  Or a new instance for every class that needs one?  Or do you just want a single instance to be created for the entire application?
 
-As for how to pick a container:  Microsoft provides one with .net core that will work with web or console applications.  It's a solid choice, but lacks some of the more advanced features that other containers provide.  On the flip side of that, you may never need these features so it's probably better to start simple.  The "wiring" up of these containers is generally done during application start up, so switching one out for another should usually be a relatively quick task.
+As for how to pick a container:  Microsoft provides one with .net core that will work with web or console applications.  It's a solid choice, but it does lack some of the more advanced features that other containers provide.  However, you may never need these features so it's probably better to start simple.  The "wiring up" of these containers is generally done during application start up, so switching one out for another should usually be a relatively quick task.
 
 > Q:  There is a lot of jargon and acronyms.
 
