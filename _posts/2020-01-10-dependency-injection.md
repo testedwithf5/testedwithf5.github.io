@@ -1,3 +1,11 @@
+---
+layout: single
+title:  "Dependency Injection"
+date:   2020-01-09 06:30:00 -0500
+categories: Practices
+comments: true
+tags: dependency injection
+---
 > Q:  What is dependency injection?
 
 Dependency injection is providing the dependencies to a class instead of having that class be responsible for creating it's own instances
