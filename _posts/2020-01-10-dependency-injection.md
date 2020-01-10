@@ -90,6 +90,7 @@ Additionally, if you are doing any kind of test driven development you will prob
 > Q: You mentioned something about frameworks earlier.  Do I need one?  And how do I pick one?
 
 Good news: You don't need one
+
 Bad news:  You should probably use one.
 
 You can definitely do all of this manually, but given the sheer variety of things that an IoC container  can do and the number of things they simplify it's probably better to use something that's been tested and used in multiple differing production environments by other people.  For example - how should lifecycles be managed?  Do you want a single instances
@@ -103,5 +104,5 @@ There is, and a lot of the [terms](https://stackoverflow.com/a/6551303/190592) b
 
 >Q:  This sounds interesting.  Can you show me some examples?
 
-[Yes.]([https://github.com/joelowrance/DIDemo](https://github.com/joelowrance/DIDemo))
+[Yes.](https://github.com/joelowrance/DIDemo)
 
